@@ -25,10 +25,7 @@ public class Invoice {
 		if(this.priceperItem<0) {
 			this.priceperItem=0.0;
 		}
-		else
-		{
-		this.priceperItem = priceperItem;
-	}
+	
 	}
 	public int getItemQuantity() {
 		return itemQuantity;
@@ -37,11 +34,7 @@ public class Invoice {
 		this.itemQuantity = itemQuantity;
 		if(this.itemQuantity<0) {
 			this.itemQuantity=0;
-		}else {
-			
-		
-		this.itemQuantity = itemQuantity;
-	}
+		}
 	}
 	public double getInvoiceAmount() {
 		return this.itemQuantity*this.priceperItem;
